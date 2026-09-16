@@ -44,3 +44,15 @@ export const perguntas = [
     return lista[posicao];
     import {aleatorio} from ‘./aleatorio.js’;
 import {perguntas} from ‘./perguntas.js;
+const botaoJogarNovamente = document.querySelector(“.novamente-btn”);
+    function jogaNovamente(){
+    atual = 0;
+    historiaFinal = "";
+    mostraPergunta();
+      function mostraResultado() {
+caixaPerguntas.textContent = "Em 2049...";
+textoResultado.textContent = historiaFinal;
+caixaAlternativas.textContent = "";
+botaoJogarNovamente.addEventListener("click", jogaNovamente());
+
+}
